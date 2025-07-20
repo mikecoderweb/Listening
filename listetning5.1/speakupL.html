@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IELTS Listening Practice - Dreamtime Tour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./SpeakupL.css">
+</head>
+<body>
+      <!-- 🌙 Toggle Theme Button -->
+  <button class="dark-toggle" onclick="toggleTheme()">
+    <span id="theme-icon">🌙</span>
+  </button>
+
+  <h1>Listening Practice: Dreamtime Travel Agency</h1>
+
+  <!-- 🎧 Audio -->
+  <audio controls>
+    <source src="./section1.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- 🖼 Image -->
+  <div class="media">
+      <a href="https://t.me/SpeakUp_uz" class="social-link telegram" target="_blank" title="Join on Telegram">
+                <i class="fab fa-telegram-plane"></i>
+                <span>SpeakUp_uz</span>
+            </a>
+  </div>
+
+  <!-- 📋 Questions -->
+  <div class="question-box">
+    <div class="question">1. Type of transportation: <input id="q1" type="text" /></div>
+    <div class="question">2. Maximum group size: <input id="q2" type="text" /></div>
+    <div class="question">3. Next tour date: <input id="q3" type="text" /></div>
+    <div class="question">4. Hotel name: The <input id="q4" type="text" /></div>
+    <div class="question">5 and 6. Which TWO are included in the price?<br>
+      <label><input type="checkbox" id="q5a" value="A"> A. Fishing trip</label>
+      <label><input type="checkbox" id="q5b" value="B"> B. Guided bushwalk</label>
+      <label><input type="checkbox" id="q5c" value="C"> C. Reptile park entry</label>
+      <label><input type="checkbox" id="q5d" value="D"> D. Table tennis</label>
+      <label><input type="checkbox" id="q5e" value="E"> E. Tennis</label>
+    </div>
+    <div class="question">7. The tour costs $<input id="q7" type="text" /></div>
+    <div class="question">8. Bookings must be made no later than ____ days in advance: <input id="q8" type="text" /></div>
+    <div class="question">9. A ____ deposit is required: <input id="q9" type="text" /></div>
+    <div class="question">10. Customer reference number: <input id="q10" type="text" /></div>
+
+    <button class="btn" onclick="submitAnswers()" id="submitBtn">Submit Answers</button>
+  </div>
+
+  <!-- 📜 Script Display -->
+  <div class="script" id="scriptBox" style="display: none;"></div>
+    <script src="./SpeakupL.js"></script>
+</body>
+</html>
